@@ -25,6 +25,10 @@ The included docker-compose.yml file demonstrates how to use the image.
 
 We provide an installation script that has only been tested on Ubuntu. However, you can also set it up manually in just a few steps
 
+### In Chemotion
+
+To include it into a Chemotion instance the Spectra container exposes PROT 4001.
+
 ### Ubuntu install script
 
 Run:

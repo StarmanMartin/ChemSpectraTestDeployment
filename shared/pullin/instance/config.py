@@ -8,4 +8,4 @@ URL_NSHIFTDB = 'https://nmrshiftdb.nmr.uni-koeln.de/NmrshiftdbServlet/nmrshiftdb
 LOGS_FILE = '/var/log/spectra/logging.log'
 
 # maximum size of a zip file in MB to prevent zip bomb, default is 100 MB
-MAX_ZIP_SIZE = 100
+MAX_ZIP_SIZE = 500
