@@ -43,7 +43,7 @@ echo "|  Running server "
 echo "|================================================================================|"
 
 # tail -f /dev/null
-gunicorn -w 4 -b 0.0.0.0:3007 server:app &
+gunicorn -w 4 -b 0.0.0.0:4001 server:app &
 
 # Save PID (optional, if you want to track)
 echo "Script PID: $$"

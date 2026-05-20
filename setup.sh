@@ -22,6 +22,8 @@ curl -O https://raw.githubusercontent.com/StarmanMartin/ChemSpectraTestDeploymen
 cd shared/pullin/instance
 curl -O https://raw.githubusercontent.com/StarmanMartin/ChemSpectraTestDeployment/main/shared/pullin/instance/config.py
 
+export 80
+
 cd ../..
 
 curl -O https://raw.githubusercontent.com/StarmanMartin/ChemSpectraTestDeployment/main/shared/APP_BRANCH.txt

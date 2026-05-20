@@ -2,20 +2,22 @@
 
 Docker container factory for test deployments of ChemSpectra
 
-**⚠️ Disclaimer
+**⚠️ Disclaimer**
 
-This setup is for testing purposes only and should not be used in production.
+**This setup is for testing purposes only and should not be used in production.
 Please shut down the container after you're done!**
 
 ## 🚀 What is this?
 
-This repository provides a Dockerfile to build a Docker image that allows you to quickly and easily deploy Chem Converter (App & Client) in a test environment.
-The content is automatically updated after each new commit on the selected branches.
+This repository provides a Dockerfile to build a Docker image
+that allows you to quickly and easily deploy ChemSpectra in a test environment.
+The content is automatically updated after each new commit on the selected
+branches.
 
 -> __No webhooks are needed!__ It is easy to set up and you do not require any privileges.
 
 The prebuilt image is available on Docker Hub:
-```mstarman/chem-converter-test:0.0.1```
+```mstarman/chem-converter-test:0.0.2```
 
 The included docker-compose.yml file demonstrates how to use the image.
 

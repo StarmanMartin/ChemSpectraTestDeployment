@@ -12,6 +12,7 @@ RUN mkdir /srv/spectra
 COPY etc_doc/nginx/sites-available/default /etc/nginx/sites-available/default
 RUN chmod 644 /etc/nginx/sites-available/default
 
+EXPOSE 4001
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1

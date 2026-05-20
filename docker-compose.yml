@@ -9,12 +9,12 @@ services:
       - default
 
 
-  app:
-    image:  mstarman/chem-spectra-test:0.0.1
+  spectra:
+    image:  mstarman/chem-spectra-test:0.0.2
     env_file:
       - ./.env
     ports: # expose default rails port to host machine
-      - ${PROJECT_WEB_PORT:-4000}:80
+      - ${PROJECT_WEB_PORT:-4001}:80
     volumes:
       - ./shared/logs:/var/log/spectra
       - ./shared/APP_BRANCH.txt:/var/share/APP_BRANCH.txt
@@ -24,6 +24,7 @@ services:
       - msconvert
     networks:
       - default
+
 volumes:
   spectra:
     name: chemotion_spectra
