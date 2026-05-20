@@ -1,0 +1,31 @@
+services:
+  msconvert:
+    image: ptrxyz/chemotion:msconvert-3.0.0
+    restart: unless-stopped
+    hostname: msconvert
+    volumes:
+      - spectra:/shared:rw
+    networks:
+      - default
+
+
+  app:
+    image:  mstarman/chem-spectra-test:0.0.1
+    env_file:
+      - ./.env
+    ports: # expose default rails port to host machine
+      - ${PROJECT_WEB_PORT:-4000}:80
+    volumes:
+      - ./shared/logs:/var/log/spectra
+      - ./shared/APP_BRANCH.txt:/var/share/APP_BRANCH.txt
+      - ./shared/pullin:/var/share/config
+      - spectra:/shared:rw
+    depends_on:
+      - msconvert
+    networks:
+      - default
+volumes:
+  spectra:
+    name: chemotion_spectra
+
+
