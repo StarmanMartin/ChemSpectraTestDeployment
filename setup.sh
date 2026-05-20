@@ -11,6 +11,11 @@ mkdir shared/logs
 mkdir shared/pullin
 mkdir shared/pullin/instance
 
+echo "setting .env"
+
+curl -O https://raw.githubusercontent.com/StarmanMartin/ChemSpectraTestDeployment/main/.env.example
+mv .env.example .env
+
 echo "Downloading missing files!"
 
 curl -O https://raw.githubusercontent.com/StarmanMartin/ChemSpectraTestDeployment/main/docker-compose.yml
